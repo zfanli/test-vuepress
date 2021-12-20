@@ -2,7 +2,7 @@ import { defineUserConfig } from 'vuepress'
 import type { DefaultThemeOptions } from 'vuepress'
 
 export default defineUserConfig<DefaultThemeOptions>({
-  lang: 'zh',
+  lang: 'zh-CN',
   title: 'Test VuePress 文档项目配置尝试',
   description: 'VuePress 文档项目配置尝试',
 
@@ -67,13 +67,18 @@ export default defineUserConfig<DefaultThemeOptions>({
 
     // 侧边栏对象
     // 不同子路径下的页面会使用不同的侧边栏
-    // sidebar: {
-    //   '/': [
-    //     {
-    //       text: 'Guide',
-    //       children: ['/vuepress.md', '/markdown.md', '/test.md'],
-    //     },
-    //   ],
-    // },
+    sidebar: {
+      '/': [
+        {
+          text: 'Guide',
+          children: [
+            'nexus-repository-manager-3.x.md',
+            '/vuepress.md',
+            '/markdown.md',
+            '/test.md',
+          ],
+        },
+      ],
+    },
   },
 })
