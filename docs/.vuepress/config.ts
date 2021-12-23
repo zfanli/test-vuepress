@@ -72,7 +72,8 @@ export default defineUserConfig<DefaultThemeOptions>({
         {
           text: 'Guide',
           children: [
-            'nexus-repository-manager-3.x.md',
+            '/nexus-repository-manager-3.x.md',
+            '/verdaccio.md',
             '/vuepress.md',
             '/markdown.md',
             '/test.md',
